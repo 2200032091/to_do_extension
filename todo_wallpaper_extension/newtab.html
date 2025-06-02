@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <style>
+    body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #f5f5f5;
+    margin: 0;
+}
+
+h1 {
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+.task-input-container {
+    display: flex;
+    align-items: center;
+    background-color: #f0f0f0;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    border: 2px solid #ccc;
+    width: 600px;
+    max-width: 90%;
+}
+
+.input-field {
+    flex: 1;
+    margin-right: 0; /* Remove margin from .input-field */
+}
+
+#taskInput, #taskCategory, #taskDueDate {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-right: 5px; /* Add margin to input elements */
+    background-color: white;
+}
+
+#taskInput:focus, #taskCategory:focus, #taskDueDate:focus {
+    outline: none;
+}
+
+#taskCategory {
+    width: 150px;
+}
+
+#taskDueDate {
+    width: 120px;
+    margin-right: 10px; /* Add more margin to date field */
+}
+button {
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 5px;
+    width: 600px;
+    max-width: 90%;
+}
+
+li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #fff;
+    padding: 12px 15px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
+}
+
+li span {
+    font-size: 18px;
+    display: block; /* Make span behave as block-level */
+}
+
+.delete-btn {
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    padding: 6px 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.task-details {
+    display: flex;
+    flex-direction: column;
+}
+
+.task-text {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+}
+
+.task-meta {
+    font-size: 12px;
+    color: gray;
+    margin-top: 2px;
+}
+.delete-btn:hover {
+    background-color: #e60000;
+}
+li {
+    cursor: grab;
+    display: flex; /* Keep flex for checkbox and span */
+    align-items: center; /* Align items vertically */
+}
+
+li:active {
+    cursor: grabbing;
+}
+
+.dragging {
+    opacity: 0.5;
+}
+
+.completed {
+    text-decoration: line-through;
+    color: gray;
+}
+.gmail-box {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 10px;
+  padding: 10px;
+  color: black;
+  margin-top: 20px;
+}
+
+    </style>
+</head>
+<body>
+    <h1>To-Do List</h1>
+
+    <div class="task-input-container">
+        <div class="input-field">
+            <input type="text" id="taskInput" placeholder="Enter ur text here">
+        </div>
+        <div class="input-field">
+            <input type="text" id="taskCategory" placeholder="Category (Optional)">
+        </div>
+        <div class="input-field">
+            <input type="date" id="taskDueDate">
+        </div>
+        <button id="addTask">Add Task</button>
+    </div>
+    <ul id="todoList" draggable="true"></ul>
+    
+      
+    <script src="newtab.js"></script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+{
+    "manifest_version": 3,
+    "name": "To-Do List Wallpaper",
+    "version": "1.0",
+    "description": "Keep your to-do list as your wallpaper on the new tab page!",
+    "permissions": ["identity","storage"],
+    
+    
+    "background": {
+    "service_worker": "background.js"
+  },
+
+ 
+    "action": {
+      "default_popup": "popup.html",
+      "default_icon": {
+        "16": "icons/icon16.jpg",
+        "48": "icons/icon48.jpg",
+        "128": "icons/icon128.jpg"
+      }
+    },
+    "chrome_url_overrides": {
+      "newtab": "newtab.html"
+    },
+    "host_permissions": ["https://www.googleapis.com/*"]
+  }
+  
