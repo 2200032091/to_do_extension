@@ -1,5 +1,5 @@
 # Chrome To-Do Extension — Personal Productivity Boost
-
+**_One tab. Zero excuses._**
 > *"If it’s out of sight, it’s out of mind."*
 
 That’s me. Every. Single. Time. So I built this simple, clean to-do list that lives in my Chrome new tab — right where my distractions usually begin. Now instead of wandering off into random clicks, I get a reminder of what actually matters.
