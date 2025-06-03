@@ -11,6 +11,13 @@ That’s me. Every. Single. Time. So I built this simple, clean to-do list that 
 - Update, delete, or drag around your tasks — it’s chill and flexible.
 - All saved locally — nothing fancy or synced (yet 👀).
 
+## 💻 Tech Stack
+
+- HTML5
+- CSS3
+- JavaScript
+- Chrome Extensions API
+  
 ## 🔥 Why I built this
 
 I wanted something lightweight, personal, and minimal — something that kicks in **before** I lose myself to infinite scrolls or impulse searches.
